@@ -1,0 +1,145 @@
+.love{
+position:relative;
+margin:0%;
+height:300px;
+border-radius:20%;
+animation:colors 5s infinite;
+}
+@keyframes colors{
+0%{background-color:teal;}
+25%{background-color:white;}
+50%{background-color:aqua;}
+75%{background-color:orange;}
+100%{background-color:lightblue;}
+
+}
+
+body{
+background-color:rgba(122,12,44,0.4);
+
+}
+.love img{
+max-width:30%;
+padding:15px;
+animation:lve 4s infinite;
+position:relative;
+}
+@keyframes lve{
+
+0%   {left:10px; top:0px;}
+25%  {left:200px; top:0px;}
+50%  { left:200px; top:190px;}
+75%  { left:10px; top:190px;}
+100% { left:10px; top:0px;}
+}
+
+
+
+h1{
+font-size:xx-large;
+color:green;
+font-family:cursive;
+text-align:center;
+text-shadow:1.2px 1.3px white;
+}
+#brk{
+width:100%;
+height:auto;
+background-color:brown;
+border:1px solid;
+border-radius:20%;
+}
+#brk p{
+text-shadow:1.3px 10px 12px orange;
+color:white;
+padding:10px;
+font-size:18px;
+font-variant:small-caps;
+font-family:cursive;
+text-align:center;
+}
+
+#img{
+max-width:100%;
+border-radius:100%;
+position:relative;
+
+
+animation:anim 5s infinite;
+}
+@keyframes anim{
+0%{transform:rotate(180deg)}
+100%{transform:rotate(352deg);}
+
+}
+
+*{
+padding:0%;
+margin:0%;
+box-sizing:border-box;
+}
+
+.row::after{
+content:"";
+clear:both;
+display:block;
+}
+.cols{
+float:left;
+max-width:100%;
+padding:l9px 18px;
+border-style:groove;
+overflow:hidden;
+border-color:lightblue;
+
+
+}
+.cols img{
+max-width:100%;
+border-radius:8px;
+transition-duration:8s;
+transition-delay:0s;
+
+
+}
+.cols img:hover{
+transform:rotate(360deg);
+
+
+}
+.cols p{
+color:red;
+text-shadow:1.4px  1.0px green;
+padding:5px;
+
+}
+p::first-letter{
+font-size:xx-large;
+color:grey;
+font-weight:bold;
+
+
+}
+
+@media screen and (min-width:778px){
+.love{
+height:1000px;
+border-radius:10px;
+position:relative;
+}
+.love img{
+max-width:40%;
+padding:10px;
+animation:lve 4s infinite;
+position:relative;
+}
+@keyframes lve{
+
+0%   {left:0px; top:0px;}
+25%  {left:500px; top:0px;}
+50%  { left:500px; top:400px;}
+75%  { left:0px; top:400px;}
+100% { left:0px; top:0px;}
+}
+
+}
